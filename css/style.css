@@ -1,3 +1,19 @@
+html{ /* sélecteur propriété valeur */
+    font-size: 62.5%;  /* 1.000rem root em 10px */
+}
+body{
+    font: 1.6rem sans-serif; /* 16px */
+    margin: 0;  
+}
+h1,h2,h3,h4,p,ol,ul,figure,dd{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
 :root{
     --color-primary: rgb(6, 136, 125);
     --color-secondary: #fff;
@@ -8,7 +24,6 @@ main,footer{
     max-width: 120.0rem;
     margin: auto;
     background-color: var(--color-main);
-    box-shadow: rgb(6, 136, 125);
 }
 
 .logos{
@@ -18,8 +33,6 @@ main,footer{
 
 header h1 {
     text-align: center;
-    margin: 0;
-    margin-bottom: 0;
 }
 
 header img{
@@ -31,12 +44,17 @@ header img{
 
 header h1, section h2{
     line-height: 3.5rem;
-    text-align: center;
     color: var(--color-secondary);
     background-color: var(--color-primary);
     margin-bottom: 2rem;
     font-weight: 300;
     text-shadow: .1rem .1rem 0 var(--color-default-global);
+}
+
+section h2{
+    text-align: left;
+    padding-left: 1.0rem;
+
 }
 
 body{
@@ -50,7 +68,6 @@ main{
 
 main ul{
     margin-bottom: 1.0rem;
-    
 }
 
 main h2{
@@ -60,14 +77,15 @@ main h2{
 
 main ul li{
     display: inline-block;
+    text-align: center;
     width: calc(100% / 4 - 1rem);
     align-items: center;
-    
 }
 
 .nav{
     background-color: rgb(6, 136, 125);
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .nav a {
@@ -87,4 +105,17 @@ main ul li{
 .nav a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+footer h2{
+    text-align: center;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+section p :nth-child(4){
+    text-align: center;
+    
 }
