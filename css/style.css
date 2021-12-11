@@ -74,6 +74,7 @@ main{
 
 main ul{
     margin-bottom: 1.0rem;
+    margin-top: 5.0rem;
 }
 
 main h2{
@@ -115,10 +116,10 @@ main ul li{
 
 footer h2{
     text-align: center;
-    ;
 }
 
 section{
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
