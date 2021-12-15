@@ -33,7 +33,7 @@ footer{
     max-width: 60.0rem;
     margin: 3rem auto 2rem;
     background-color: var(--color-main);
-    box-shadow: 0 0 1.0rem rgb(96, 170, 219);
+    box-shadow: 0 0 2.0rem rgb(96, 170, 219);
     padding: 1rem;
 }
 
@@ -41,27 +41,6 @@ footer{
     width: 100px;
     height: 100px;
 }
-
-#bg {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
-    height: 200%;
-  }
-
-  #bg img {
-    position: absolute;
-    opacity: 0.15; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-  }
-
    
 
 header h1 {
