@@ -17,7 +17,7 @@ h1,h2,h3,h4{
 :root{
     --color-primary: rgb(96, 170, 219);
     --color-secondary: #fff;
-    --color-main: #f7f8fc;
+    --color-main: #d9d9dd9c;
 }
 
 
@@ -38,8 +38,8 @@ footer{
 }
 
 .logos{
-    width: 100px;
-    height: 100px;
+    width: 10.0rem;
+    height: 10.0rem;
 }
    
 
@@ -54,9 +54,11 @@ header h1 {
 header img{
     margin-top: 0.9rem;
     margin-left: 1.5rem;
+    position: absolute;
     float: left;
-    width: 56px;
-    height: 44px;
+    width: 4.4rem;
+    height: 4.4rem;
+    object-fit: cover;
 }
 
 header h1, section h2{
@@ -85,8 +87,12 @@ main{
 }
 
 main ul{
+    display: grid;
     margin-bottom: 1.0rem;
     margin-top: 5.0rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4;
+    text-align: center;
 }
 
 main h2{
@@ -95,10 +101,8 @@ main h2{
 }
 
 main ul li{
-    display: inline-block;
-    text-align: center;
-    width: calc(100% / 4 - 1rem);
-    align-items: center;
+    display: block;
+    width: 100%;
 }
 
 nav{
@@ -131,6 +135,8 @@ p{
     font-size: larger;
 }
 
+
+
 footer h2{
     text-align: center;
 }
@@ -145,12 +151,11 @@ section p :nth-child(4){
     
 }
 
-.container{
+.skills-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    text-align: center;
     grid-gap: 1rem;
     padding: 1rem 80px;
     font-size: 1.6rem;
@@ -207,11 +212,31 @@ section p :nth-child(4){
 }
 
 
+@media screen and (max-width: 40rem) {
 
+    main, footer{
+        width: auto;
+        margin: 0;
+    }
 
+    section ul{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    
+    .skills-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    .study-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-@media screen and (max-width: 40em) {
+    header{
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
 
     div{
         display: grid;
@@ -222,8 +247,20 @@ section p :nth-child(4){
         width: auto;
         margin: 0;
         display: block;
-       
     }
+
+    .nav a{
+        float: none;
+        color: #f2f2f2;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    main section h2{
+        margin: 0;
+    }
+
 
     nav ul {
         display: flex;
