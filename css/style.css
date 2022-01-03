@@ -1,8 +1,9 @@
-html{ /* sélecteur propriété valeur */
-    font-size: 62.5%;  /* 1.000rem root em 10px */
+/* Reset */
+html{ 
+    font-size: 62.5%;  
 }
 body{
-    font: 1.6rem sans-serif; /* 16px */
+    font: 1.6rem sans-serif; 
     margin: 0;  
 }
 h1,h2,h3,h4,p,ol,ul,figure,dd{
@@ -15,7 +16,7 @@ h1,h2,h3,h4{
 }
 
 :root{
-    --color-primary: rgb(96, 170, 219);
+    --color-primary: rgb(98, 170, 218);
     --color-secondary: #fff;
     --color-main: #d9d9dd9c;
 }
